@@ -1,3 +1,7 @@
+[2024/10/31]
+- ETC
+  + Maven Repository 주소 변경 (http -> https)
+  
 [2022/04/07]
 - Release: 1.8.0-SNAPSHOT
 - Tag: 1.7.0

@@ -15,9 +15,13 @@
 		<compile.target.version>1.8</compile.target.version>
 
 		<!-- >>> begin: dependencies -->
-		<slf4j-api.version>1.7.32</slf4j-api.version>
+		<!-- slf4j-api.version>1.7.32</slf4j-api.version>
 		<org.apache.logging.lo4j.log4j-core.version>2.7</org.apache.logging.lo4j.log4j-core.version>
-		<org.apache.logging.lo4j.log4j-api.version>2.7</org.apache.logging.lo4j.log4j-api.version>
+		<org.apache.logging.lo4j.log4j-api.version>2.7</org.apache.logging.lo4j.log4j-api.version -->
+		
+		<slf4j-api.version>1.7.36</slf4j-api.version>
+		<org.apache.logging.lo4j.log4j-core.version>2.17.2</org.apache.logging.lo4j.log4j-core.version>
+		<org.apache.logging.lo4j.log4j-api.version>2.17.2</org.apache.logging.lo4j.log4j-api.version>
 
 		<open-commons-core.version>2.0.0-SNAPSHOT</open-commons-core.version>
 		<!-- <<< end: dependencies -->
@@ -46,13 +50,13 @@
 		<repository>
 			<id>releases</id>
 			<name>Release Repository</name>
-			<url>http://nexus3.ymtech.co.kr/repository/maven-releases/</url>
+			<url>https://nexus3.ymtech.co.kr/repository/maven-releases/</url>
 			<!-- <url>http://maven.ymtech.co.kr/nexus/content/repositories/releases/</url> -->
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
 			<name>Snapshot Repository</name>
-			<url>http://nexus3.ymtech.co.kr/repository/maven-snapshots/</url>
+			<url>https://nexus3.ymtech.co.kr/repository/maven-snapshots/</url>
 			<!-- <url>http://maven.ymtech.co.kr/nexus/content/repositories/snapshots/</url> -->
 		</snapshotRepository>
 	</distributionManagement>
