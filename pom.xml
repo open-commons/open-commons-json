@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>io.github.open-commons</groupId>
@@ -20,7 +19,7 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
-	
+
 	<scm>
 		<connection>scm:git:https://github.com/open-commons/open-commons-json.git</connection>
 		<developerConnection>scm:git:https://github.com/open-commons/open-commons-json.git</developerConnection>
@@ -38,7 +37,7 @@
 
 	<properties>
 		<build.finalName>open-commons-json-${project.version}</build.finalName>
-		
+
 		<encoding>UTF-8</encoding>
 		<java.version>1.8</java.version>
 
@@ -63,11 +62,17 @@
 	</distributionManagement>
 
 	<dependencies>
+		<!-- ************** -->
+		<!-- >>> begin: open-commons -->
+		<!-- begin: open-commons-core -->
 		<dependency>
-			<groupId>open.commons</groupId>
+			<groupId>io.github.open-commons</groupId>
 			<artifactId>open-commons-core</artifactId>
 			<version>${open-commons-core.version}</version>
 		</dependency>
+		<!-- end: open-commons-core -->
+		<!-- <<< end: open-commons -->
+		<!-- ************** -->
 
 		<!-- >>> begin: logging -->
 		<!-- https://mvnrepository.com/artifact/com.lmax/disruptor -->
@@ -97,7 +102,7 @@
 		<!-- ********************** -->
 
 		<!-- <<< end: logging -->
-				
+
 	</dependencies>
 
 	<build>
@@ -172,7 +177,7 @@
 							<goal>jar</goal>
 						</goals>
 					</execution>
-				</executions>				
+				</executions>
 			</plugin>
 			<!-- <<< end: javadoc -->
 			<!-- Maven Central Deployment plugin -->
